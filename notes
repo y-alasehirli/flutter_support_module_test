@@ -1,0 +1,34 @@
+2FA adımlarında landing -> signinNup -> verification -> homepage adımlarında oluşturmak lazım stack yapısını.
+                landing -> homepage auhenticated olmuş kullanıcı içinde izlenmesi gereken stack yapısı.
+
+<Person> modelini yada onaylanmış <User> ı, <Person> oluşturmasını -authenticated- durumuna düştüğü verification kısmında yapmak lazım.
+Ayrıca landing -> homepage geçişinde de gene landing içerisinde <Person> veri tipi ile başlamalayız ki homepage kendi modelimiz üzerine kuruyoruz. 
+
+
+
+
+
+https://fcm.googleapis.com/fcm/send
+Content-Type:application/json
+Authorization:key=AIzaSyZ-1u...0GBYzPu7Udno5aA
+
+{ "data": {
+    "score": "5x1",
+    "time": "15:10"
+  },
+  "to" : "flmo-jW9T_yoln5LBxClGt:APA91bFS3mtpBGw3QfNo8X49yw_kkNlGlkWElX1n8oOLWHcS2VqVThC3c9jOnkVa1iWgBTC9h38CTcXGKcztlG86wncaKkTZ1VqDjDj9uQzd3nGWXWOauCHj_fSOVwaY_Ed_83qor_Xi",
+  "direct_boot_ok" : true
+}
+
+{   
+     "notification":{
+       "title":"`$FooCorp` up 1.43% on the day",
+       "body":"FooCorp gained 11.80 points to close at 835.67, up 1.43% on the day."
+     },
+     "data": {
+    "score": "5x1",
+    "time": "15:10"
+  },
+  "to" : "flmo-jW9T_yoln5LBxClGt:APA91bFS3mtpBGw3QfNo8X49yw_kkNlGlkWElX1n8oOLWHcS2VqVThC3c9jOnkVa1iWgBTC9h38CTcXGKcztlG86wncaKkTZ1VqDjDj9uQzd3nGWXWOauCHj_fSOVwaY_Ed_83qor_Xi",
+  "direct_boot_ok" : true
+    }   
